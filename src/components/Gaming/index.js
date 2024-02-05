@@ -106,9 +106,9 @@ class Gaming extends Component {
           return (
             <>
               <Header />
-              <GamingBgContainer>
+              <GamingBgContainer darkMode={darkMode} data-testid="gaming">
                 <SideBarView />
-                <GamingMainContainer darkMode={darkMode} data-testid="gaming">
+                <GamingMainContainer>
                   <GamingBannerContainer darkMode={darkMode}>
                     <GamingIconCon darkMode={darkMode}>
                       <CgPlayListAdd size={40} color="#ff0b37" />

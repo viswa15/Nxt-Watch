@@ -118,12 +118,12 @@ class Trending extends Component {
           return (
             <>
               <Header />
-              <TrendingVideosBgContainer>
+              <TrendingVideosBgContainer
+                data-testid="trending"
+                darkMode={darkMode}
+              >
                 <SideBarView />
-                <TrendingVideosMainContainer
-                  data-testid="trending"
-                  darkMode={darkMode}
-                >
+                <TrendingVideosMainContainer>
                   <TrendingBannerContainer darkMode={darkMode}>
                     <TrendingIconCon darkMode={darkMode}>
                       <FaFirefoxBrowser size={40} color="#ff0b37" />

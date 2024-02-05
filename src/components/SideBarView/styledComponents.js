@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 export const DesktopSidebar = styled.div`
   background-color: ${props => (props.darkMode ? '#231f20' : '#ffffff')};
   height: 90vh;
+  margin-top: 10vh;
   width: 15vw;
   display: flex;
   flex-direction: column;

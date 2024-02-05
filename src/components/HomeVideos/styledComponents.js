@@ -8,7 +8,7 @@ export const HomeVideosList = styled.ul`
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  min-height: 65vh;
+  min-height: 100vh;
 
   flex-wrap: wrap;
   @media screen and (max-width: 567px) {

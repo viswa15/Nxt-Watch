@@ -2,22 +2,24 @@ import styled from 'styled-components'
 
 export const HomeBgContainer = styled.div`
   display: flex;
+  background-color: ${props => (props.darkMode ? '#181818' : '#f9f9f9')};
 `
 
 export const HomeMainContainer = styled.div`
   width: 85vw;
   min-height: 90vh;
   margin-left: 15vw;
-  background-color: ${props => (props.darkMode ? '#181818' : '#f9f9f9')};
+  margin-top: 10vh;
+  background-color: transparent;
   @media screen and (max-width: 767px) {
     width: 100vw;
     margin-left: 0;
+    padding: 6px;
   }
 `
 
 export const HomeListsContainer = styled.div`
   width: 100%;
-  height: 100%;
   padding: 20px 0 0 0;
   margin-top: 15px;
   @media screen and (max-width: 567px) {
@@ -27,7 +29,7 @@ export const HomeListsContainer = styled.div`
 `
 
 export const BannerContainer = styled.div`
-  height: 240px;
+  height: 35vh;
   width: 100%;
   display: ${props => props.display};
   background: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
@@ -94,15 +96,16 @@ export const BannerCloseBtn = styled.button`
   cursor: pointer;
 `
 export const SearchContainer = styled.div`
-  width: 60%;
+  width: 500px;
   height: 44px;
   background-color: ${props => (props.darkMode ? 'transparent' : '#ffffff')};
   margin-bottom: 15px;
   border: 1px solid #cbd5e1;
-  margin-left: 10px;
+  margin-left: 18px;
   border-radius: 7px;
   @media screen and (max-width: 567px) {
-    width: 80%;
+    width: 90%;
+    margin: 0;
   }
 `
 

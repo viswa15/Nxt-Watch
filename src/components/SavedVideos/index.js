@@ -25,12 +25,9 @@ const SavedVideos = () => (
       return (
         <>
           <Header />
-          <SavedVideosBgContainer>
+          <SavedVideosBgContainer data-testid="savedVideos" darkMode={darkMode}>
             <SideBarView />
-            <SavedVideosMainContainer
-              data-testid="savedVideos"
-              darkMode={darkMode}
-            >
+            <SavedVideosMainContainer>
               {savedVideos.length > 0 ? (
                 <>
                   <SavedVideosBannerContainer darkMode={darkMode}>

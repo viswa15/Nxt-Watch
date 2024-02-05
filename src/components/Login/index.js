@@ -21,8 +21,8 @@ import {
 class Login extends Component {
   state = {
     showPassword: false,
-    username: '',
-    password: '',
+    username: 'rahul',
+    password: 'rahul@2021',
     showSubmitError: false,
     errorMsg: '',
   }

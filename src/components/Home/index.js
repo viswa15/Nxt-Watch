@@ -38,7 +38,7 @@ class Home extends Component {
   state = {
     videosList: [],
     searchInput: '',
-    bannerView: 'block',
+    bannerView: 'flex',
     apiStatus: apiStatusInfo.initial,
   }
 
@@ -173,9 +173,9 @@ class Home extends Component {
           return (
             <>
               <Header />
-              <HomeBgContainer>
+              <HomeBgContainer data-testid="home" darkMode={darkMode}>
                 <SideBarView />
-                <HomeMainContainer data-testid="home" darkMode={darkMode}>
+                <HomeMainContainer>
                   {this.renderBanner()}
                   <HomeListsContainer>
                     <SearchContainer darkMode={darkMode}>

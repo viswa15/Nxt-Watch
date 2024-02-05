@@ -2,13 +2,15 @@ import styled from 'styled-components'
 
 export const SavedVideosBgContainer = styled.div`
   display: flex;
+  background-color: ${props => (props.darkMode ? '#0f0f0f' : '#f9f9f9')};
 `
 
 export const SavedVideosMainContainer = styled.div`
   width: 85vw;
   margin-left: 15vw;
+  margin-top: 10vh;
   min-height: 90vh;
-  background-color: ${props => (props.darkMode ? '#0f0f0f' : '#f9f9f9')};
+  background-color: transparent;
   @media screen and (max-width: 767px) {
     width: 100vw;
     margin-left: 0;
@@ -66,7 +68,7 @@ export const NoSavedVideosView = styled.div`
 `
 
 export const NoSavedVideosImg = styled.img`
-  width: 60%;
+  width: 50%;
   height: 380px;
   margin-bottom: 20px;
   @media screen and (max-width: 567px) {

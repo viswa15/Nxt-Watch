@@ -154,13 +154,18 @@ export const NavbarContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 10vh;
-  width : 100%
+  width: 100%;
   padding: 10px;
+  position: fixed;
 `
 
 export const NavbarLogo = styled.img`
   height: 100%;
   width: 150px;
+  margin-left: 20px;
+  @media screen and (max-width: 767px) {
+    margin-left: 10px;
+  }
 `
 
 export const NavbarListItems = styled.ul`
